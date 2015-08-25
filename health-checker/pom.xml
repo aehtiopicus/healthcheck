@@ -18,11 +18,13 @@
 		<junit-version>4.12</junit-version>
 		<log4j-version>1.2.17</log4j-version>
 		<cglib.version>2.2.2</cglib.version>
-		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>				
+		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>				
 		<org.aspectj-version>1.8.5</org.aspectj-version>
 		<joda-time-version>2.2</joda-time-version>	
 		<javax-validator-api-version>1.1.0.Final</javax-validator-api-version>	
-		<cglib.version>2.2</cglib.version>			
+		<cglib.version>2.2</cglib.version>	
+		<org.aspectj-version>1.8.5</org.aspectj-version>
+  	<org.codehaus.jackson>1.9.2</org.codehaus.jackson>		
 	</properties>
 
 	<build>
@@ -164,8 +166,21 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${org.aspectj-version}</version>
 		</dependency>
-	
-
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+ <dependency>
+	        <groupId>org.codehaus.jackson</groupId>
+	        <artifactId>jackson-mapper-asl</artifactId>
+	        <version>${org.codehaus.jackson}</version>
+	    </dependency>
+	    <dependency>
+			<groupId>org.codehaus.jettison</groupId>
+			<artifactId>jettison</artifactId>
+			<version>${org.codehaus.jettison}</version>
+		</dependency>
 
 
 	</dependencies>

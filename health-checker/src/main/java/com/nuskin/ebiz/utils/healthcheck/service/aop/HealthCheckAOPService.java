@@ -1,4 +1,4 @@
-package com.aehtiopicus.utils.aop;
+package com.nuskin.ebiz.utils.healthcheck.service.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -17,7 +17,7 @@ public class HealthCheckAOPService {
 		System.out.println("error");
 	}
 	
-	@Pointcut("within(@com.aehtiopicus.utils.configuration.HealthCheck *)")
+	@Pointcut("within(@com.nuskin.ebiz.utils.healthcheck.annotations.HealthCheck *)")
 	public void anAnnotatedMethod() {
 		System.out.println("error");
 	}
